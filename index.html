@@ -131,13 +131,20 @@
                           very clearly separated in space, which is not the case in this example, as we can see from the pairwise projection plots 
                           (of the simplified
                           Dataset-2) above.
+                      </p>
                       <h4 class="display-4 left">Non-linear Support Vector Machines</h4>
                       <p>Roughly speaking, what suppor vector machines do is find hyperplanes in space that separate datapoints into regions associated with classes, very much like 
                          linear classifiers, except that this regions are found in the space resulting form applying a non-linear transformation to the original 
-                          data feature space (if a SVM has a linear kernel, then it is a linear classifier).
+                          data feature space (if a SVM has a linear kernel, then it is a linear classifier). Such transformation is applied with the purpose of mapping
+                          datapoints into regions that are more easily separable than they were in the original space.
                            
                       </p>
-                      <h4 class="display-4 left">Neural Networks</h4>
+                      <h4 class="display-4 left">Neural Networks<h4>
+                      <p> Finally, a neural network is a concatenation of linear and non-linear transormations on the original space that make up a highly
+                          non-linear model for decision boundaries on the resulting space. Hence, this method adds a lot of complexity and it should be perfoming the best
+                          in terms of accuracy. In practice, there is always a trade off between complexity and efficiency, since more complex algorithms will 
+                          usually take longer to run. For example, if we are faced with a binary classification task on data that is clearly separable, there is no
+                          reason to use a neural network on the first attempt, since linear classifiers are very likely to work well. 
                       </p>
                       <hr>
           </div>
