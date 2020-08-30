@@ -67,9 +67,30 @@
                         
                         
                     </p>
+            
+                    <p> To clean the data, we simply dropped the columns (features) that had too many missing values or that were irrelevant for the classification 
+                        task. For example, the amount of beer made in the recipe tells us no information about what the style the recipe belongs to. The rows
+                        with missing values after keeping the most relevant features were dropped as well. The reason for not imputing is that we are interested 
+                        in using this data for experimentation on machine learning modeling, rather than trying to extract patterns for a practical application. 
+                        Also, Gravity and Final Gravity are highly correlated, so one of them was dropped.
+                             
+                    </p>
+            
+                    <p> To show the difficulty of this classification task, due to the fact that there is simply not much data to help distinguish between classes, 
+                        we illustrate the overlap between the Dataset-2 (binary) classes on the features that were kept with their pairwise (2D) projections.
+                        
+                    <figure>
+                        <img src="ML-data-exp/ml-exp/img/pairs2.png" class="img-fluid" alt="Responsive image">
+                        <figcaption>Pairwise projections of the Dataset-2 classes.</figcaption>
+                    </figure>
+                        
+                        
+                    </p>
+            
+            
                     <figure>
                         <img src="ML-data-exp/ml-exp/img/dendro.png" class="img-fluid" alt="Responsive image">
-                        <figcaption>Dendrogram of beerstyles (dataset1). The closer the connection of beerstyles to 0 on the X axis, the more similar they are.
+                        <figcaption>Dendrogram of beerstyles (Dataset-1). The closer the connection of beerstyles to 0 on the X axis, the more similar they are.
                         Labels are colored according to a uniform 4-partition of the 'Color' feature range.</figcaption>
                     </figure>
                     <hr>
