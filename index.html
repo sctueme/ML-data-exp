@@ -121,16 +121,23 @@
                           not by model complexity or efficiency but by the data itself. This is the part where it becomes clear
                           that at some stage it becomes pointless to try and apply more complex machine learning models to the problem at hand.
                       </p>
-                      <h4 class="display-4 left">Linear Classification: Stochastic Gradient Descent</h4>
+                      <h4 class="display-4 left">Linear Classifiers</h4>
                       <p>Formally speaking, the Stochastic Gradient Descent method is an optimization algorithm (it seeks to minimize some function) and not per se 
                           a model for classification. However, scikit learn's SGDClassifier is an instance in which we can select hyperparameters that will yield
                           a classification model as a particular case. Since we are using hyperparameter optimization tools, we might as well select this method
-                          first. In general, what linear classifiers do is try to segment the space the data is embedded in into regions that will correspond to the 
-                          classes in our task. For Dataset-1, we have only 7 features for 47 different classes. That could be enought provided that the data is
-                          very clearly separated in space, which is not the case in this example, as we can see from the pairwise projection plots (of the simplified
+                          first. In general, what linear classifiers do is try to segment the space the data is embedded in, into regions that will correspond to the 
+                          classes in our task, using lines, planes or hyperplanes as separators. For Dataset-1, we have only 7 features for 47 different classes. 
+                          That could be enought provided that the data is
+                          very clearly separated in space, which is not the case in this example, as we can see from the pairwise projection plots 
+                          (of the simplified
                           Dataset-2) above.
-                      <h4 class="display-4 left">Non-linear Classification: Support Vector Machines</h4>
-                      <h4 class="display-4 left">Highly non-linear Classification: Neural Networks</h4>
+                      <h4 class="display-4 left">Non-linear Support Vector Machines</h4>
+                      <p>Roughly speaking, what suppor vector machines do is find hyperplanes in space that separate datapoints into regions associated with classes, very much like 
+                         linear classifiers, except that this regions are found in the space resulting form applying a non-linear transformation to the original 
+                          data feature space (if a SVM has a linear kernel, then it is a linear classifier).
+                           
+                      </p>
+                      <h4 class="display-4 left">Neural Networks</h4>
                       </p>
                       <hr>
           </div>
