@@ -68,16 +68,16 @@
                     </p>
             
                     <p> To clean the data, we simply dropped the columns (features) that had too many missing values or that were irrelevant for the classification 
-                        task. For example, the amount of beer made in the recipe tells us no information about what the style the recipe belongs to. The rows
+                        task. For example, the amount of beer made in the recipe tells us no information about what style the recipe belongs to. The rows
                         with missing values after keeping the most relevant features were dropped as well. The reason for not imputing is that we are interested 
                         in using this data for experimentation on machine learning modeling, rather than trying to extract patterns for a practical application. 
-                        Also, Gravity and Final Gravity are highly correlated, so one of them was dropped.
+                        Also, Original Gravity and Final Gravity are highly correlated, so one of them was dropped.
                              
                     </p>
             
                     <p> A good way of understanding the intricacies of the beer styles represented in the recipe samples, is the following dendrogram, since it
                         provides a way of quickly visualizing similarity between beer styles of interest. This was made by taking the beer styles as vectors
-                        on euclidean space described by the mean of the feature corresponding to each entry. Then, single-linkage hierarchical clustering,
+                        on euclidean space described by the mean of the feature for each class corresponding to each entry. Then, single-linkage hierarchical clustering
                         with euclidean metrics was applied.  
                     <figure>
                         <img src="ML-data-exp/ml-exp/img/dendro.png" class="img-fluid" alt="Responsive image">
