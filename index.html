@@ -75,6 +75,17 @@
                              
                     </p>
             
+                    <p> A good way of understanding the intricacies of the beer styles represented in the recipe samples, is the following dendrogram, since it
+                        provides a way of quickly visualizing similarity between beer styles of interest. This was made by taking the beer styles as vectors
+                        on euclidean space described by the mean of the feature corresponding to each entry. Then, single-linkage hierarchical clustering,
+                        with euclidean metrics was applied.  
+                    <figure>
+                        <img src="ML-data-exp/ml-exp/img/dendro.png" class="img-fluid" alt="Responsive image">
+                        <figcaption>Dendrogram of beer styles (Dataset-1). The closer the connection of beerstyles to 0 on the X axis, the more similar they are.
+                        Labels are colored according to a uniform 4-partition of the 'Color' feature range.</figcaption>
+                    </figure>
+                    </p>
+            
                     <p> To show the difficulty of this classification task, due to the fact that there is simply not much data to help distinguish between classes, 
                         we illustrate the overlap between the Dataset-2 (binary) classes on the features that were kept with their pairwise (2D) projections.
                         
@@ -98,16 +109,6 @@
                         
                     </p>
             
-                    <p> A good way of understanding the intricacies of the beer styles represented in the recipe samples, is the following dendrogram, since it
-                        provides a way of quickly visualizing similarity between beer styles of interest. This was made by taking the beer styles as vectors
-                        on euclidean space described by the mean of the feature corresponding to each entry. Then, single-linkage hierarchical clustering,
-                        with euclidean metrics was applied.  
-                    <figure>
-                        <img src="ML-data-exp/ml-exp/img/dendro.png" class="img-fluid" alt="Responsive image">
-                        <figcaption>Dendrogram of beer styles (Dataset-1). The closer the connection of beerstyles to 0 on the X axis, the more similar they are.
-                        Labels are colored according to a uniform 4-partition of the 'Color' feature range.</figcaption>
-                    </figure>
-                    </p>
                     <hr>
                     
         </div>  
