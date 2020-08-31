@@ -159,7 +159,15 @@
                       
                       <h4 class="display-4 left">Results<h4>    
                       <p>
-                      
+                      For Dataset-1 model complexity helped increase the accuracy especially from the SGD (stochastic gradient descent linear classifier) to 
+                          the SVC (support vector machine) methods, and less so from SVC to the NN (neural network) method, even though the NN is much more complex.
+                          Moreover, for several iterations it was necessary to interrupt the hyperparameter search (due to running times), and therefore we cannot be 
+                          certain that the improvement obtained by going from SVC to NN is significant. Hence, we can infer that increasingly complex models will 
+                          improve decreasingly less due to the fact that the data has too many classes and not enough information to make out significant differences 
+                          between them. For the Dataset-2 overall accuracy was increased (which is expected since it became a simplified binary classification task) but
+                          there seems to be no improvement from SVC to NN, and very little improvement from SGD to SVC. At this point, since method complexity with
+                          hyperparameter optimization is failing to improve accuracy scores, we can conclude that it is pointless to keep trying even more complex models,
+                          since the data yields just enough information for the obtained accuracy scores in the different methods. 
                       <figure>
                         <img src="ML-data-exp/ml-exp/img/confusion.png" class="img-fluid" alt="Responsive image">
                         <figcaption>Dataset-2 confusion matrix.</figcaption>
