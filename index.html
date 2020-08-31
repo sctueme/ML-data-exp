@@ -15,26 +15,17 @@
         <div class="main-style">
             
                     <h1 class="display-1" class="lead">Complexity vs Insufficient Data</h1>
-                    <h4 class="display-4 left">Objectives</h4>
+                    <h4 class="display-4 left">Summary</h4>
                     <p> Training machine learning models that perform well has become increasingly easier. 
-                        However, there is a lot more to take into account when attempting to do so, than just fitting them and predicting. In this project
-                        we deal with a dataset that will pose problems for classic classifiers (and surely for much more sofisticated ones as well), 
-                        with the aim of explaining why these methods don't work as well as we'd like. As a main takeaway is the idea that understanding the data,
+                        However, there is a lot more to take into account when attempting to do so, than just fitting them and predicting. In this project the objective
+                        is not to use patterns in data and machine learning modeling for any particular application, but rather to explore some problems that may arise
+                        when dealing with a dataset that will pose 
+                        problems for a machine learning task. In this particular case, we are attempting a classification problem for which there is not enough data.
+                        As a main takeaway is the idea that understanding the data,
                         what problem are we trying to solve, and which methods are adequate for the task, is paramount before engaging in ML modeling. Failure to
                         understand this could mean executing algorithms that take several hours to run in exchange for very low performance in terms both of results
                         and computational efficiency, or even trying and failing repeatedly to solve a problem that is actually unsolvable with the available data.  
                     </p>  
-                    <h4 class="display-4 left">Summary</h4>
-                    <p> We will use data from more than 70,000 beer recipes, which are segmented in 176 different styles. Beer styles will be our labels for 
-                        classification, and we will deal with 2 subsets of the data: the first one will contain beer styles that amount for at least 0.5% of
-                        total samples, and the second one will contain only the 2 most popular beer styles, making the classification task much simpler. The first 
-                        dataset could be considered to be "complex" due to the high number of labels and high number of observations. Nonetheless, it should be
-                        considered instead as "insufficient" data. In order to classify a large number of classes, it is not enough to have large samples of course,
-                        but also a sufficient number of features (variables that describe each observation) that help distinguish classes between themselves, and hence
-                        these must also be informative. In other words, the information in the data must contain enough different patterns so that ML methods can actually 
-                        recognize them. This is difficult to know formally before testing any algorithm, but we should have an intuition to roughly identify datasets that will cause
-                        problems. This is the case with our dataset and we will explain why later on. 
-                    </p>
                         
                     <p>     
                         First, we have an exploratory data analysis to understand the data, and then we show the difference between both datasets 
