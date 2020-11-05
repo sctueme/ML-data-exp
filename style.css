@@ -27,8 +27,9 @@ h5{
     width:80%;
     margin:auto;
 }
-.img-table{
-    max-width: 500px;
+.img-fluid{
+    max-width: 100%;
+    max-height: 700px;
 }
 video{
     width: 100%;
